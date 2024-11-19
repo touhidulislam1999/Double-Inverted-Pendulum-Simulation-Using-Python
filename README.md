@@ -1,42 +1,72 @@
-# Double-Inverted-Pendulum-Simulation-Using-Python
-The double inverted pendulum is a complex, unstable, and nonlinear mechanical device with two connected pendulums swinging vertically under gravity. It's a benchmark problem in control theory and robotics study, with applications in robotics, aerospace engineering, and physics instruction.
+# 🎢 Double-Inverted Pendulum Simulation Using Python
 
-# Introduction:
-A mechanical device called a double inverted pendulum consists of two pendulums, one of which is connected to the end of the other. Under the pull of gravity, each pendulum is allowed to swing in a vertical plane. A extremely unstable and nonlinear system that displays complex and chaotic behavior is the double inverted pendulum. Due to its complex dynamics and the difficulty in controlling it, it is frequently used as a benchmark problem for control theory and robotics study. Applications for the double inverted pendulum include robotics, aeronautical engineering, and physics instruction.
+The double inverted pendulum is a challenging and nonlinear mechanical system that exhibits complex and chaotic dynamics. This project simulates the behavior of this fascinating system using Python, providing insights into its applications in robotics, aerospace engineering, and physics.
 
-![image](https://github.com/user-attachments/assets/3457b429-0038-46c1-a969-4a8d756d60fc)
+---
 
-Here if Figure 1: there are two pendulums with mass of the bobs m1 and m2 and both having an amplitude of l1 and l2 respectively. Pendulum 1 has created an angle of θ1 with x-axis and pendulum 2 has created an angle of θ2 with the length of pendulum 1.
+## 📜 **Introduction**
+A double inverted pendulum consists of two pendulums, where the second pendulum is attached to the end of the first. Each pendulum swings under the influence of gravity, creating a highly unstable and nonlinear system. Due to its intricate dynamics, the double inverted pendulum is widely used as a benchmark problem in:
+- **Control Theory**
+- **Robotics Research**
+- **Physics Instruction**
+- **Aerospace Engineering**
 
-# Derivation:
-**Kinetic Energy Calculation:**
-The kinetic energy of the system is the sum of the kinetic energies of the two masses. The velocity of each mass can be expressed as a function of the angular velocities of the links using trigonometry. The kinetic energy is then given by the sum of the kinetic energies of the two masses:
+### System Description:
+- **Masses:** Pendulum 1 and Pendulum 2 have masses \( m_1 \) and \( m_2 \), respectively.
+- **Lengths:** Their respective lengths are \( l_1 \) and \( l_2 \).
+- **Angles:** Pendulum 1 forms an angle \( \theta_1 \) with the x-axis, and Pendulum 2 forms \( \theta_2 \) relative to Pendulum 1.
 
-![image](https://github.com/user-attachments/assets/c760b739-320e-4b1a-abb6-a3bf0d4a08ae)
+![Double Inverted Pendulum Diagram](https://github.com/user-attachments/assets/3457b429-0038-46c1-a969-4a8d756d60fc)
 
-𝜃̇1 and 𝜃̇2 are the angular velocities of the first and second links respectively.
+---
 
-# Potential Energy Calculation:
-The potential energy of the system is the sum of the potential energies of the two masses, given by:
+## 📐 **Derivation of Dynamics**
 
-![image](https://github.com/user-attachments/assets/f16ff012-4e2d-4e99-9197-323118e838b3)
+### **Kinetic Energy Calculation**
+The kinetic energy (\( K \)) is calculated by summing the kinetic energies of the two masses. Using trigonometry to relate angular velocities (\( \dot{\theta}_1 \) and \( \dot{\theta}_2 \)), the total kinetic energy is:
 
-where g is the acceleration due to gravity.
+![Kinetic Energy Formula](https://github.com/user-attachments/assets/c760b739-320e-4b1a-abb6-a3bf0d4a08ae)
 
-# Calculate Lagrangian:
-The Lagrangian, L is the difference between the kinetic energy and potential energy of the system
+---
 
-**L = K-P**
-# Apply of Lagrange’s Equations:
-Lagrange's equations can be used to derive the equations of motion for the system:
+### **Potential Energy Calculation**
+The potential energy (\( P \)) is derived as the sum of the potential energies of the two pendulums, relative to their heights:
 
-![image](https://github.com/user-attachments/assets/9c9cb5a2-f89a-4463-8f7c-ef1d9b0d8840)
+![Potential Energy Formula](https://github.com/user-attachments/assets/f16ff012-4e2d-4e99-9197-323118e838b3)
 
-These equations describe the dynamics of the double inverted pendulum, and can be used to analyze its behavior and design control strategies.
+---
 
-We simulate the double inverted pendulum system using python and here is our result in GIF format: 
-![image](https://github.com/user-attachments/assets/9ca89b28-0fc5-4225-a0fe-b7d328a47013)
+### **Lagrangian and Equations of Motion**
+The Lagrangian (\( L \)) of the system is calculated as the difference between kinetic and potential energy:
+\[
+L = K - P
+\]
 
-# References:
-1. https://www3.math.tuberlin.de/Vorlesungen/SoSe12/Kontrolltheorie/matlab/inverted_pendulum.pdf
-                        
+Using **Lagrange's Equations**, the equations of motion for the double inverted pendulum are derived as follows:
+
+![Lagrange Equation](https://github.com/user-attachments/assets/9c9cb5a2-f89a-4463-8f7c-ef1d9b0d8840)
+
+These equations describe the dynamics of the system and form the basis for analyzing its behavior and designing control strategies.
+
+---
+
+## 🎥 **Simulation Results**
+
+This project simulates the double inverted pendulum using Python and visualizes its chaotic motion. Below is the simulation result presented in a GIF format:
+
+![Simulation GIF](https://github.com/user-attachments/assets/9ca89b28-0fc5-4225-a0fe-b7d328a47013)
+
+---
+
+## 📚 **Applications**
+- **Control System Design:** Benchmark for advanced control algorithms.
+- **Robotics:** Balancing systems and humanoid robots.
+- **Aerospace Engineering:** Stabilization and trajectory prediction.
+- **Physics Education:** Illustrating nonlinear dynamics and chaos theory.
+
+---
+
+## 🛠️ **How to Use**
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/touhidulislam1999/Double-Inverted-Pendulum-Simulation-Using-Python.git
